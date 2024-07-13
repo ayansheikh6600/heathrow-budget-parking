@@ -1,5 +1,5 @@
 import React from "react";
-import HeroBack from "@/assets/HeroBackground.svg";
+import HeroBack from "@/assets/hero.gif";
 import Image from "next/image";
 import { Button } from "../ui/button";
 

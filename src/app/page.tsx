@@ -1,10 +1,13 @@
 import AirportForm from "@/components/forms/AirportForm";
 import BlogCard from "@/components/shared/BlogCard";
+import OurServiceCard from "@/components/shared/OurServiceCard";
 import ParkingComparisonTable from "@/components/shared/ParkingTable";
 import ServiceCard from "@/components/shared/ServiceCard";
 import AboutUs from "@/components/widgets/AboutUs";
 import BlogSection from "@/components/widgets/BlogSection";
 import Hero from "@/components/widgets/Hero";
+import OurExpertise from "@/components/widgets/OurExpertise";
+import OurServiceSection from "@/components/widgets/OurServiceSection";
 import ServiceSection from "@/components/widgets/ServiceSection";
 import Image from "next/image";
 
@@ -29,6 +32,8 @@ export default function Home() {
     <ServiceSection/>
    <BlogSection/>
    <AboutUs/>
+   <OurExpertise/>
+   <OurServiceSection/>
     </>
   );
 }
