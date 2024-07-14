@@ -10,6 +10,7 @@ import { CgRing } from "react-icons/cg";
 import { IoIosArrowDown } from "react-icons/io";
 import { GiCrossMark } from "react-icons/gi";
 import Link from "next/link";
+import { IoPerson } from "react-icons/io5";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -109,16 +110,18 @@ const Navbar = () => {
               <li className="text-gray-800 hover:text-primary transition duration-300 ">
                 Contact Us
               </li>
-              <li className="text-gray-800 hover:text-primary transition duration-300">
-                Blog
-              </li>
+              
               <li>
-                <Button className="bg-primary hidden lg:block text-white">Login</Button>
+                <Button className="bg-primary  lg:block text-white flex ">
+                  <div className="flex items-center gap-1">
+                    <IoPerson /><span>LOGIN</span>
+                  </div>
+                </Button>
               </li>
             </ul>
 
           </nav>
-              
+
         </div>
 
         {/* Mobile Menu (Dropdown) */}
@@ -133,22 +136,22 @@ const Navbar = () => {
                   <NavDropDown data={data.airportRuns} />
                 </li>
                 <li className="text-gray-800 hover:text-primary transition duration-300 ">
-                Special Offer
-              </li>
-              <li className="text-gray-800 hover:text-primary transition duration-300 ">
-                Blogs
-              </li>
-              <li className="text-gray-800 hover:text-primary transition duration-300 ">
-                About Us
-              </li>
-              <li className="text-gray-800 hover:text-primary transition duration-300 ">
-                Contact Us
-              </li>
-              <li className="text-gray-800 hover:text-primary transition duration-300">
-                Blog
-              </li>
+                  Special Offer
+                </li>
+                <li className="text-gray-800 hover:text-primary transition duration-300 ">
+                  Blogs
+                </li>
+                <li className="text-gray-800 hover:text-primary transition duration-300 ">
+                  About Us
+                </li>
+                <li className="text-gray-800 hover:text-primary transition duration-300 ">
+                  Contact Us
+                </li>
+                
                 <li>
-                  <Button className="bg-primary  text-white">Login</Button>
+                  <Button className="bg-primary  text-white"><div className="flex items-center gap-1">
+                    <IoPerson /><span>LOGIN</span>
+                  </div></Button>
                 </li>
               </ul>
             </div>
