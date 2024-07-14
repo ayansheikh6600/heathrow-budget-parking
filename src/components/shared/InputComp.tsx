@@ -17,7 +17,7 @@ const InputComp = ({...props}) => {
   return (
     <div
       className={
-        "flex items-center border-[1px] rounded p-1  " +
+        "flex items-center border-[1px] border-gray-200 rounded p-1  " +
         (classes?.div || "")
       }
     >
@@ -30,7 +30,7 @@ const InputComp = ({...props}) => {
         name={name}
         disabled={disabled}
         className={
-          "bg-transparent border-none focus:outline-none text-black placeholder-black w-full p-1 sm:p-2 text-xs sm:text-sm" +
+          "bg-transparent border-none  focus:outline-none text-black placeholder-gray-500 w-full p-1 sm:p-2 text-xs sm:text-sm" +
           (classes?.input || "")
         }
       />
