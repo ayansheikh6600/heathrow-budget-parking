@@ -4,10 +4,10 @@ import React, { useState } from 'react';
 const FAQItem = ({ question, answer, isActive, onClick }:any) => {
   return (
     <div className="faq-item mb-4 w-full">
-      <div className="faq-question border-[#CACACA] border rounded-lg p-4 cursor-pointer" onClick={onClick}>
+      <div className="faq-question border-[#CACACA] border rounded-lg p-4 pl-12 cursor-pointer" onClick={onClick}>
         {question}
       </div>
-      <div className={`faq-answer w-full ${isActive ? 'max-h-40 p-4 bg-[#F5F5F5]' : 'max-h-0'} overflow-hidden transition-all duration-300 ease-in-out bg-white rounded-b-lg`}>
+      <div className={`faq-answer w-full ${isActive ? 'max-h-40 p-4 pl-12 bg-[#F5F5F5]' : 'max-h-0'} overflow-hidden transition-all duration-300 ease-in-out  rounded-b-lg`}>
         <p className="break-words">{answer}</p>
       </div>
     </div>
