@@ -35,7 +35,7 @@ const AirportForm = () => {
   };
 
   return (
-    <div className=' w-full sm:container  sm:mt-[-80px] md:mt-[-100px] z-10'>
+    <div className=' w-full sm:container  sm:mt-[-80px] md:mt-[-180px] z-10'>
       <div className='sm:w-[90%] mx-auto bg-white rounded-t-xl p-3 sm:px-6'>
         <div className='grid grid-cols-1 sm:grid-cols-4 gap-3 '>
           <Button className='outline-primary border-primary text-xs sm:text-sm'>Airport Parking</Button>
