@@ -20,8 +20,14 @@ const Navbar = () => {
       runs: [
         { name: "Gatwick Airport", icon: <BsFillAirplaneFill /> },
         { name: "Heathrow Airport", icon: <BsFillAirplaneFill /> },
-        { name: "London City Airport", icon: <BsFillAirplaneFill /> },
+        { name: "Birmingham Airport", icon: <BsFillAirplaneFill /> },
+        { name: "Manchester Airport", icon: <BsFillAirplaneFill /> },
+        { name: "Stansted Airport", icon: <BsFillAirplaneFill /> },
         { name: "Luton Airport", icon: <BsFillAirplaneFill /> },
+        { name: "Bristol Airport", icon: <BsFillAirplaneFill /> },
+        { name: "Edinburgh Airport", icon: <BsFillAirplaneFill /> },
+        { name: "Glasgow Airport", icon: <BsFillAirplaneFill /> },
+        { name: "London City Airport", icon: <BsFillAirplaneFill /> },
       ],
     },
     stationRuns: {
@@ -87,7 +93,7 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:block ">
-            <ul className="flex items-center gap-4">
+            <ul className="flex items-center gap-7">
               <li className="text-gray-800 hover:text-primary transition duration-300">
                 <Link href={"/"}> Home</Link>
               </li>
