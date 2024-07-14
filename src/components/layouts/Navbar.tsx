@@ -112,10 +112,13 @@ const Navbar = () => {
               <li className="text-gray-800 hover:text-primary transition duration-300">
                 Blog
               </li>
+              <li>
+                <Button className="bg-primary hidden lg:block text-white">Login</Button>
+              </li>
             </ul>
 
           </nav>
-              {/* <Button className="bg-primary hidden lg:block text-white">Signup</Button> */}
+              
         </div>
 
         {/* Mobile Menu (Dropdown) */}
@@ -144,9 +147,9 @@ const Navbar = () => {
               <li className="text-gray-800 hover:text-primary transition duration-300">
                 Blog
               </li>
-                {/* <li>
-                  <Button className="bg-primary  text-white">Signup</Button>
-                </li> */}
+                <li>
+                  <Button className="bg-primary  text-white">Login</Button>
+                </li>
               </ul>
             </div>
           </div>
