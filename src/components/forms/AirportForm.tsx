@@ -54,9 +54,11 @@ const AirportForm = () => {
         </select>
         <select name="terminal" className='w-full text-xs sm:text-sm p-2 sm:p-3 border-[#999999] border rounded-md col-span-12 sm:col-span-6' onChange={handleChange}>
           <option>Terminal</option>
-          <option value="terminal1">terminal1</option>
+          {/* <option value="terminal1">terminal1</option> */}
           <option value="terminal2">terminal2</option>
           <option value="terminal3">terminal3</option>
+          <option value="terminal4">terminal4</option>
+          <option value="terminal5">terminal5</option>
         </select>
 
         <div className='col-span-12 sm:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4'>

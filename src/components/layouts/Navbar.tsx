@@ -95,9 +95,6 @@ const Navbar = () => {
                 <NavDropDown data={data.airportRuns} />
               </li>
               <li className="text-gray-800 hover:text-primary transition duration-300 ">
-                Special Offer
-              </li>
-              <li className="text-gray-800 hover:text-primary transition duration-300 ">
                 Blogs
               </li>
               <li className="text-gray-800 hover:text-primary transition duration-300 ">
@@ -112,7 +109,7 @@ const Navbar = () => {
             </ul>
 
           </nav>
-              <Button className="bg-primary hidden lg:block text-white">Signup</Button>
+              {/* <Button className="bg-primary hidden lg:block text-white">Signup</Button> */}
         </div>
 
         {/* Mobile Menu (Dropdown) */}
@@ -141,9 +138,9 @@ const Navbar = () => {
               <li className="text-gray-800 hover:text-primary transition duration-300">
                 Blog
               </li>
-                <li>
+                {/* <li>
                   <Button className="bg-primary  text-white">Signup</Button>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
