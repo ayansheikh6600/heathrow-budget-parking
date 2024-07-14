@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import { BsFillAirplaneFill, BsTrainFrontFill } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -28,16 +29,16 @@ const Footer = () => {
             <div>
               <h3 className="text-xl font-bold">Airport</h3>
               <ul className="space-y-3">
-                <li>Gatwick Airport</li>
-                <li>Heathrow Airport</li>
-                <li>Birmingham Airport</li>
-                <li>Manchester Airport</li>
-                <li>Stansted Airport</li>
-                <li>Luton Airport</li>
-                <li>Bristol Airport</li>
-                <li>Edinburgh Airport</li>
-                <li>Glasgow Airport</li>
-                <li>London City Airport</li>
+                <li className='flex items-center gap-3'><BsFillAirplaneFill/>Gatwick Airport</li>
+                <li className='flex items-center gap-3'><BsFillAirplaneFill/>Heathrow Airport</li>
+                <li className='flex items-center gap-3'><BsFillAirplaneFill/>Birmingham Airport</li>
+                <li className='flex items-center gap-3'><BsFillAirplaneFill/>Manchester Airport</li>
+                <li className='flex items-center gap-3'><BsFillAirplaneFill/>Stansted Airport</li>
+                <li className='flex items-center gap-3'><BsFillAirplaneFill/>Luton Airport</li>
+                <li className='flex items-center gap-3'><BsFillAirplaneFill/>Bristol Airport</li>
+                <li className='flex items-center gap-3'><BsFillAirplaneFill/>Edinburgh Airport</li>
+                <li className='flex items-center gap-3'><BsFillAirplaneFill/>Glasgow Airport</li>
+                <li className='flex items-center gap-3'><BsFillAirplaneFill/>London City Airport</li>
               </ul>
             </div>
             <div>
