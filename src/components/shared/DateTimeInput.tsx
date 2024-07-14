@@ -24,10 +24,10 @@ const DateTimeInput: React.FC<{ type: 'date' | 'time'; placeholder: string } | a
                 onChange={onChange}
                 name={name}
                 placeholder=" " // Empty placeholder to override default placeholder
-                className={`bg-transparent  focus:outline-none  text-black placeholder-black w-full p-1 sm:p-3 rounded-lg text-xs sm:text-sm border border-gray-200 ${isFocused || value ? 'text-black' : 'text-white'}`}
+                className={`bg-transparent  focus:outline-none  text-black placeholder-black w-full p-2 sm:p-3 rounded-lg text-xs sm:text-sm border border-gray-200 ${isFocused || value ? 'text-black' : 'text-white'}`}
             />
             {!isFocused && !value && (
-                <span className="absolute left-3 top-4 text-sm text-gray-500 pointer-events-none">
+                <span className="absolute left-3 top-3 sm:top-4 text-xs md:text-sm text-gray-500 pointer-events-none">
                     {placeholder}
                 </span>
             )}

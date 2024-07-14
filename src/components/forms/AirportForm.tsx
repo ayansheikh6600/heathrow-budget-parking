@@ -88,7 +88,7 @@ const AirportForm = () => {
           <option value="terminal5">Terminal 5</option>
         </select>
 
-        <div className='col-span-12 sm:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4'>
+        <div className='col-span-12 sm:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:mt-4'>
           <DateTimeInput
             type="time"
             placeholder={"Pick Up Time"}
@@ -107,7 +107,7 @@ const AirportForm = () => {
           />
         </div>
 
-        <div className='col-span-12 sm:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4'>
+        <div className='col-span-12 sm:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:mt-4'>
           
           <DateTimeInput
           placeholder={"Drop Off Time"}
@@ -127,7 +127,7 @@ const AirportForm = () => {
           />
         </div>
 
-        <div className='col-span-12 items-center grid grid-cols-12 gap-3 mt-4'>
+        <div className='col-span-12 items-center grid grid-cols-12 gap-3 sm:mt-4'>
           <div className='col-span-12 sm:col-span-4'>
             <InputComp
               placeholder="Promo Code"
