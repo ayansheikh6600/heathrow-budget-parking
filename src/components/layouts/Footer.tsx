@@ -27,7 +27,7 @@ const Footer = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <h3 className="text-xl font-bold">Airport</h3>
+              <h3 className="text-xl font-bold mb-5 w-full ">Airport</h3>
               <ul className="space-y-3">
                 <li className='flex items-center gap-3'><BsFillAirplaneFill/>Gatwick Airport</li>
                 <li className='flex items-center gap-3'><BsFillAirplaneFill/>Heathrow Airport</li>
@@ -42,8 +42,9 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-bold">Important Reading</h3>
+              <h3 className="text-lg font-bold mb-5 w-full ">Important Reading</h3>
               <ul className="space-y-3">
+                
                 <li>About Us</li>
                 <li>Blog</li>
                 <li>Contact Us</li>
