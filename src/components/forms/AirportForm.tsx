@@ -9,8 +9,8 @@ interface FormData {
   email: string;
   message: string;
   airport: string;
-  time: string;
-  date: string;
+  PickTimeDate: string;
+  DropTimeDate: string;
   PromoCode: string;
 }
 
@@ -21,22 +21,22 @@ const AirportForm = () => {
     email: "",
     message: "",
     airport: "",
-    time: "",
-    date: "",
+    PickTimeDate: "",
+    DropTimeDate: "",
     PromoCode: ""
   });
 
   const airports = [
-    { name: "Gatwick Airport",  },
+    // { name: "Gatwick Airport",  },
     { name: "Heathrow Airport",  },
-    { name: "Birmingham Airport", },
-    { name: "Manchester Airport", },
-    { name: "Stansted Airport", },
-    { name: "Luton Airport",  },
-    { name: "Bristol Airport",  },
-    { name: "Edinburgh Airport",},
-    { name: "Glasgow Airport", },
-    { name: "London City Airport",  },
+    // { name: "Birmingham Airport", },
+    // { name: "Manchester Airport", },
+    // { name: "Stansted Airport", },
+    // { name: "Luton Airport",  },
+    // { name: "Bristol Airport",  },
+    // { name: "Edinburgh Airport",},
+    // { name: "Glasgow Airport", },
+    // { name: "London City Airport",  },
   ]
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -50,11 +50,15 @@ const AirportForm = () => {
   return (
     <div className=' w-full sm:container  sm:mt-[-80px] md:mt-[-180px] z-10'>
       <div className='sm:w-[90%] mx-auto bg-white rounded-t-xl p-3 sm:px-6'>
-        <div className='grid grid-cols-1 sm:grid-cols-4 gap-3 '>
+        {/* <div className='grid grid-cols-1 sm:grid-cols-4 gap-3 '>
           <Button className='outline-primary border-primary text-xs sm:text-sm'>Airport Parking</Button>
           <Button className='outline-primary text-primary border-primary text-xs sm:text-sm' variant={"outline"}>Hotel & Parking</Button>
           <Button className='outline-primary text-primary border-primary text-xs sm:text-sm' variant={"outline"}>Lounge</Button>
           <Button className='outline-primary text-primary border-primary text-xs sm:text-sm' variant={"outline"}>Airport Transfer</Button>
+        </div> */}
+        <div className='grid grid-cols-1 '>
+          <Button className='outline-primary border-primary w-fit px-6 mx-auto text-xs sm:text-sm'>Airport Parking</Button>
+          
         </div>
       </div>
 
@@ -77,34 +81,31 @@ const AirportForm = () => {
 
         <div className='col-span-12 sm:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4'>
           <InputComp
-            placeholder="Drop off Time"
+            placeholder="Pick Up Time & Date" 
             classes={{ icon: "bg-black text-white", div: "border-[#999999] bg-white rounded-lg" }}
-            name="time"
-            value={formData.time}
-            onChange={handleChange}
+            disabled={true}
           />
           <InputComp
-            type="time"
+            type="datetime-local"
+            placeholder={"Drop"}
             classes={{ icon: "bg-black text-white", div: "border-[#999999] bg-white rounded-lg" }}
-            name="time"
-            value={formData.time}
+            name="PickTimeDate"
+            value={formData.PickTimeDate}
             onChange={handleChange}
           />
         </div>
 
         <div className='col-span-12 sm:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4'>
           <InputComp
-            placeholder="Drop off Date"
+            placeholder="Drop Off Time & Date"
             classes={{ icon: "bg-black text-white", div: "border-[#999999] bg-white rounded-lg" }}
-            name="date"
-            value={formData.date}
-            onChange={handleChange}
+            
           />
           <InputComp
-            type="date"
+            type="datetime-local"
             classes={{ icon: "bg-black text-white", div: "border-[#999999] bg-white rounded-lg" }}
-            name="date"
-            value={formData.date}
+            name="DropTimeDate"
+            value={formData.DropTimeDate}
             onChange={handleChange}
           />
         </div>

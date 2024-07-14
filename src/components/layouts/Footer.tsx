@@ -12,16 +12,19 @@ const Footer = () => {
             <p>Know more about our Privacy Policy - you can easily unsubscribe any time!</p>
           </div>
 
-          <div className="flex">
+          <div className="flex items-center md:w-[50%]">
             <input
               type="email"
               placeholder="Enter Your Email Address..."
-              className="w-full p-2 rounded-md text-black"
+              className="w-full p-3 rounded-md text-black"
             />
-            <button className="bg-primary  p-2 rounded-md ml-[-20px]">SUBSCRIBE</button>
+            <button className="bg-primary  p-3 rounded-md ml-[-20px]">SUBSCRIBE</button>
           </div>
         </div>
         <hr className='' />
+        <div className='container'>
+          
+        
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
 
           <div className="space-y-4">
@@ -61,10 +64,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-10 border-t border-white pt-6 text-center">
-          <div className='sm:flex-row flex flex-col gap-2  justify-between'>
+        </div>
+        <hr className='' />
+        <div className="text-center">
+          <div className='sm:flex-row flex flex-col gap-2  items-center justify-between'>
             <p className="">Working Hours: Mon - Sun 24h</p>
-            <div className="flex justify-center space-x-4 mb-4">
+            <div className="flex justify-center space-x-4 ">
               <Image src={'/paymentcards.png'} alt='' width={200} height={100} />
             </div>
           </div>
@@ -74,6 +79,7 @@ const Footer = () => {
             <a href="#" className="text-white hover:text-gray-300"><i className="fab fa-instagram"></i></a>
             <a href="#" className="text-white hover:text-gray-300"><i className="fab fa-linkedin-in"></i></a>
           </div>
+          <hr className='mt-4' />
           <p className="mt-4">&copy; 2024 Copyright Heathrow Budget Parking. All Rights Reserved.</p>
         </div>
       </div>

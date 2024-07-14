@@ -1,15 +1,17 @@
 // components/ReusableInput.jsx
 import React, { useRef } from "react";
 
-const InputComp = ({
-  value,
-  placeholder,
-  onChange,
-  classes,
-  name,
-  type,
-}: any) => {
+const InputComp = ({...props}) => {
 
+  const {
+    value,
+    placeholder,
+    onChange,
+    classes,
+    name,
+    type,
+    disabled,
+  } = props
 
 
   return (
@@ -26,6 +28,7 @@ const InputComp = ({
         onChange={onChange}
         placeholder={placeholder}
         name={name}
+        disabled={disabled}
         className={
           "bg-transparent border-none focus:outline-none text-black placeholder-black w-full p-1 sm:p-2 text-xs sm:text-sm" +
           (classes?.input || "")
