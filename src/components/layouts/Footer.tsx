@@ -5,6 +5,7 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { PiInstagramLogoFill } from "react-icons/pi";
 import { FaFacebookF } from "react-icons/fa";
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -57,13 +58,13 @@ const Footer = () => {
                 <h3 className="text-lg font-bold mb-5 w-full ">Important Reading</h3>
                 <ul className="space-y-3">
 
-                  <li>About Us</li>
-                  <li>Blog</li>
-                  <li>Contact Us</li>
-                  <li>Privacy Policy</li>
-                  <li>Terms & Conditions</li>
-                  <li>Cancelations & Refund</li>
-                  <li>FAQs</li>
+                  <li><Link href={'/about'}> About Us </Link></li>
+                  <li><Link href={'/blogs'}>Blog</Link></li>
+                  <li><Link href={'/contact'}>Contact Us</Link> </li>
+                  <li > <Link href={"/policy"}>Privacy Policy</Link></li>
+                  <li ><Link href={'/terms'}>Terms & Conditions </Link></li>
+                  
+                  <li><Link href={'/faqs'}>FAQs</Link> </li>
                 </ul>
               </div>
             </div>
@@ -77,12 +78,7 @@ const Footer = () => {
               <Image src={'/paymentcards.png'} alt='' width={200} height={100} />
             </div>
           </div>
-          <div className="flex justify-center space-x-4">
-            <a href="#" className="text-white hover:text-gray-300"><i className="fab fa-facebook-f"></i></a>
-            <a href="#" className="text-white hover:text-gray-300"><i className="fab fa-twitter"></i></a>
-            <a href="#" className="text-white hover:text-gray-300"><i className="fab fa-instagram"></i></a>
-            <a href="#" className="text-white hover:text-gray-300"><i className="fab fa-linkedin-in"></i></a>
-          </div>
+
           <hr className='mt-4' />
           <div className='md:flex items-center justify-between mt-4'>
             <p className="">&copy; 2024 Copyright Heathrow Budget Parking. All Rights Reserved.</p>
