@@ -88,7 +88,7 @@ const AirportForm = () => {
           <option value="terminal5">Terminal 5</option>
         </select>
 
-        <div className='col-span-12 sm:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:mt-4'>
+        <div className='col-span-12 sm:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:mt-2'>
           <DateTimeInput
             type="time"
             placeholder={"Pick Up Time"}
@@ -107,7 +107,7 @@ const AirportForm = () => {
           />
         </div>
 
-        <div className='col-span-12 sm:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:mt-4'>
+        <div className='col-span-12 sm:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:mt-2'>
           
           <DateTimeInput
           placeholder={"Drop Off Time"}
@@ -127,8 +127,8 @@ const AirportForm = () => {
           />
         </div>
 
-        <div className='col-span-12 items-center grid grid-cols-12 gap-3 sm:mt-4'>
-          <div className='col-span-12 sm:col-span-4'>
+        <div className='col-span-12 items-center grid grid-cols-2 gap-3 sm:mt-2'>
+          <div className=' '>
             <InputComp
               placeholder="Promo Code"
               classes={{ icon: "bg-black text-white", div: "border-[#999999] bg-white rounded-lg" }}
@@ -137,8 +137,8 @@ const AirportForm = () => {
               onChange={handleChange}
             />
           </div>
-          <div className='col-span-12 sm:col-span-8 flex justify-center'>
-            <Button className='bg-primary'>
+          <div className='  flex justify-center'>
+            <Button className='bg-primary sm:px-20'>
               Get Code
             </Button>
           </div>
