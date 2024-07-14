@@ -24,10 +24,10 @@ const Footer = () => {
               CabX is a reliable cab facilitator that has partnered with numerous reliable cab services. CabX offers two types of services: B2B & B2C. The services include a web-based dashboard for managing bookings, real-time tracking of vehicles, & detailed reporting. These services are aimed at streamlining transportation needs, saving time and money for businesses.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
               <h3 className="text-xl font-bold">Airport</h3>
-              <ul className="space-y-2">
+              <ul className="space-y-3">
                 <li>Gatwick Airport</li>
                 <li>Heathrow Airport</li>
                 <li>Birmingham Airport</li>
@@ -42,7 +42,7 @@ const Footer = () => {
             </div>
             <div>
               <h3 className="text-xl font-bold">Important Reading</h3>
-              <ul className="space-y-2">
+              <ul className="space-y-3">
                 <li>About Us</li>
                 <li>Blog</li>
                 <li>Contact Us</li>
