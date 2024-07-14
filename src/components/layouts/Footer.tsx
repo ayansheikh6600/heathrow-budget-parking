@@ -1,6 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
 import { BsFillAirplaneFill, BsTrainFrontFill } from "react-icons/bs";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa";
+import { PiInstagramLogoFill } from "react-icons/pi";
+import { FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -22,48 +26,48 @@ const Footer = () => {
           </div>
         </div>
         <hr className='' />
-        <div className='container'>
-          
-        
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div className='sm:container'>
 
-          <div className="space-y-4">
-            <Image src="/footerlogo.png" alt="Heathrow Budget Parking" width={200} height={100} className="" />
-            <p className='sm:text-lg text-xs'>
-              CabX is a reliable cab facilitator that has partnered with numerous reliable cab services. CabX offers two types of services: B2B & B2C. The services include a web-based dashboard for managing bookings, real-time tracking of vehicles, & detailed reporting. These services are aimed at streamlining transportation needs, saving time and money for businesses.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-xl font-bold mb-5 w-full ">Airport</h3>
-              <ul className="space-y-3">
-                <li className='flex items-center gap-3'><BsFillAirplaneFill />Gatwick Airport</li>
-                <li className='flex items-center gap-3'><BsFillAirplaneFill />Heathrow Airport</li>
-                <li className='flex items-center gap-3'><BsFillAirplaneFill />Birmingham Airport</li>
-                <li className='flex items-center gap-3'><BsFillAirplaneFill />Manchester Airport</li>
-                <li className='flex items-center gap-3'><BsFillAirplaneFill />Stansted Airport</li>
-                <li className='flex items-center gap-3'><BsFillAirplaneFill />Luton Airport</li>
-                <li className='flex items-center gap-3'><BsFillAirplaneFill />Bristol Airport</li>
-                <li className='flex items-center gap-3'><BsFillAirplaneFill />Edinburgh Airport</li>
-                <li className='flex items-center gap-3'><BsFillAirplaneFill />Glasgow Airport</li>
-                <li className='flex items-center gap-3'><BsFillAirplaneFill />London City Airport</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-lg font-bold mb-5 w-full ">Important Reading</h3>
-              <ul className="space-y-3">
 
-                <li>About Us</li>
-                <li>Blog</li>
-                <li>Contact Us</li>
-                <li>Privacy Policy</li>
-                <li>Terms & Conditions</li>
-                <li>Cancelations & Refund</li>
-                <li>FAQs</li>
-              </ul>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+            <div className="space-y-4">
+              <Image src="/footerlogo.png" alt="Heathrow Budget Parking" width={200} height={100} className="" />
+              <p className='sm:text-lg text-xs'>
+                CabX is a reliable cab facilitator that has partnered with numerous reliable cab services. CabX offers two types of services: B2B & B2C. The services include a web-based dashboard for managing bookings, real-time tracking of vehicles, & detailed reporting. These services are aimed at streamlining transportation needs, saving time and money for businesses.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <div>
+                <h3 className="text-xl font-bold mb-5 w-full ">Airport</h3>
+                <ul className="space-y-3">
+                  <li className='flex items-center gap-3'><BsFillAirplaneFill />Gatwick Airport</li>
+                  <li className='flex items-center gap-3'><BsFillAirplaneFill />Heathrow Airport</li>
+                  <li className='flex items-center gap-3'><BsFillAirplaneFill />Birmingham Airport</li>
+                  <li className='flex items-center gap-3'><BsFillAirplaneFill />Manchester Airport</li>
+                  <li className='flex items-center gap-3'><BsFillAirplaneFill />Stansted Airport</li>
+                  <li className='flex items-center gap-3'><BsFillAirplaneFill />Luton Airport</li>
+                  <li className='flex items-center gap-3'><BsFillAirplaneFill />Bristol Airport</li>
+                  <li className='flex items-center gap-3'><BsFillAirplaneFill />Edinburgh Airport</li>
+                  <li className='flex items-center gap-3'><BsFillAirplaneFill />Glasgow Airport</li>
+                  <li className='flex items-center gap-3'><BsFillAirplaneFill />London City Airport</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold mb-5 w-full ">Important Reading</h3>
+                <ul className="space-y-3">
+
+                  <li>About Us</li>
+                  <li>Blog</li>
+                  <li>Contact Us</li>
+                  <li>Privacy Policy</li>
+                  <li>Terms & Conditions</li>
+                  <li>Cancelations & Refund</li>
+                  <li>FAQs</li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
         </div>
         <hr className='' />
         <div className="text-center">
@@ -80,7 +84,17 @@ const Footer = () => {
             <a href="#" className="text-white hover:text-gray-300"><i className="fab fa-linkedin-in"></i></a>
           </div>
           <hr className='mt-4' />
-          <p className="mt-4">&copy; 2024 Copyright Heathrow Budget Parking. All Rights Reserved.</p>
+          <div className='md:flex items-center justify-between mt-4'>
+            <p className="">&copy; 2024 Copyright Heathrow Budget Parking. All Rights Reserved.</p>
+
+            <div className='flex items-center justify-center gap-6 mt-2 md:mt-0 text-white text-xl'>
+              <FaLinkedinIn />
+              <FaTwitter />
+              <PiInstagramLogoFill />
+              <FaFacebookF />
+
+            </div>
+          </div>
         </div>
       </div>
     </footer>
