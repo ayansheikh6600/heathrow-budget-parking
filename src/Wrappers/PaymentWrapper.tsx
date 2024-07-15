@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import { FaPlusCircle } from "react-icons/fa";
+import { FaPlusCircle, FaTrashAlt } from "react-icons/fa";
 
 
 
@@ -214,6 +214,11 @@ const PaymentWrapper = () => {
   const addVehicle = () => {
     setFormData({ ...formData, vehicles: [...formData.vehicles, { make: '', model: '', color: '', regNo: '' }] });
   };
+  const removeVehicle = (index: number) => {
+    const newVehicles = formData.vehicles.filter((_, i) => i !== index);
+    setFormData({ ...formData, vehicles: newVehicles });
+  };
+
 
   const [step, setStep] = useState(0);
 
@@ -235,10 +240,19 @@ const PaymentWrapper = () => {
       <div className="p-4 shadow-[0_3px_15px_3px_rgba(0,0,0,0.2)] rounded-lg">
         <div className='flex justify-between items-center mb-4'>
           <h2 className="text-base sm:text-xl font-semibold">Vehicle Details {index + 1}</h2>
+          <div className='sm:flex gap-2'>
           <button onClick={addVehicle} className="bg-primary flex items-center text-xs sm:text-base gap-2 text-white py-2 px-3 rounded-lg">
           <FaPlusCircle />
           Add Extra Car
         </button>
+        {index > 0 && (
+              <button onClick={() => removeVehicle(index)} className="bg-red-500 flex w-full mt-2 sm:mt-0 sm:w-fit items-center text-xs sm:text-base gap-2 text-white py-2 px-3 rounded-lg">
+                <FaTrashAlt />
+                Remove
+              </button>
+            )}
+          </div>
+         
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
