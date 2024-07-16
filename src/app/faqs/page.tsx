@@ -4,11 +4,11 @@ import React, { useState } from 'react';
 const FAQItem = ({ question, answer, isActive, onClick }:any) => {
   return (
     <div className="faq-item mb-4 w-full">
-      <div className="faq-question border-[#CACACA] border rounded-lg p-4 pl-12 cursor-pointer" onClick={onClick}>
+      <div className="faq-question text-[12px] font-semibold border-[#CACACA] border rounded-lg p-4 pl-12 cursor-pointer" onClick={onClick}>
         {question}
       </div>
       <div className={`faq-answer w-full ${isActive ? 'max-h-40 p-4 pl-12 bg-[#F5F5F5]' : 'max-h-0'} overflow-hidden transition-all duration-300 ease-in-out  rounded-b-lg`}>
-        <p className="break-words">{answer}</p>
+        <p className="break-words text-[12px]">{answer}</p>
       </div>
     </div>
   );
@@ -80,8 +80,8 @@ const Page = () => {
 
   return (
     <div className='flex flex-col gap-5 py-6 sm:container p-2'>
-      <div className='md:w-[50%] mx-auto sm:w-[80%] w-full text-center p-3 space-y-[20px]'>
-        <h1 className='uppercase text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-secondary-extraDark'>
+      <div className='md:w-[50%] mx-auto sm:w-[80%] w-full space-y-[20px] text-center sm:p-0 p-[50px]'>
+        <h1 className='capitalize text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-secondary-extraDark'>
           Frequently Asked Questions
         </h1>
         <p className='font-semibold text-xs sm:text-sm md:text-base text-secondary-extraDark'>
@@ -89,7 +89,7 @@ const Page = () => {
         </p>
       </div>
 
-      <div className="items-center justify-center bg-white ">
+      <div className="items-center justify-center bg-white pb-[20px]">
         <div className='p-5 border-gray-300 border text-sm rounded-lg w-full'>
           <div className='text-sm sm:container h-[485px] overflow-y-auto sm:p-6 custom-scrollbar'>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 items-center justify-center text-center gap-2 md:gap-5 w-full bg-[#F5F5F5] p-3 px-6 rounded-lg mb-4'>
@@ -99,10 +99,13 @@ const Page = () => {
                   className={`cursor-pointer font-semibold `}
                   onClick={() => handleCategoryChange(category)}
                 >
-                    <h2 className={`w-fit mx-auto ${selectedCategory === category ? 'border-b-secondary-extraDark border-b-2' : ''}`}>
+                    <h2 className={`w-fit text-[14px] font-bold mx-auto`}>
                   {category}
-
+                  {selectedCategory === category ? <div className='w-[70%] rounded-full mx-auto h-0.5 bg-secondary-extraDark'>
+                      
+                      </div>:""}
                     </h2>
+                    
                 </div>
               ))}
             </div>
