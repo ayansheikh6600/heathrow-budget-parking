@@ -5,8 +5,8 @@ import React from 'react'
 const Page = () => {
   return (
     <>
-    <div className='flex flex-col gap-5 py-6'>
-        <div className='md:w-[50%] mx-auto sm:w-[80%] w-full text-center sm:p-0 p-3'>
+    <div className='flex flex-col gap-5 py-6 sm:container'>
+        <div className='md:w-[50%] mx-auto sm:w-[80%] w-full space-y-[20px] text-center sm:p-0 p-3'>
             <h1 className='uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-secondary-extraDark'>
             privacy & policy
             </h1>
@@ -16,9 +16,9 @@ const Page = () => {
         </div>
 
         <div className="">
-            <div className=" items-center justify-center bg-white  p-4">
-                <div className='p-5 border-[#CACACA] border text-sm rounded-lg  w-fit mx-auto'>
-                    <div className=" text-sm   sm:container  h-[485px] overflow-y-auto sm:p-6 custom-scrollbar">
+            <div className=" items-center justify-center bg-white  ">
+                <div className='p-5 border-[#CACACA] border text-sm rounded-lg  w-full'>
+                    <div className=" text-sm   sm:container  h-[485px] overflow-y-auto  sm:p-6 custom-scrollbar ">
                         <div className='sm:container'>
                             <p>{'CABBX LTD "us", "we", or "our" operates the wwwCABBX.co.uk website the "Service". This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data. We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information under this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible from www.x-ride.co.uk Information Collection and Use We collect several different types of information for various purposes to provide and improve our Service to you.'}</p>
                             <h3 className="text-xl font-semibold text-gray-700 mt-6 mb-2">Types of Data Collected</h3>

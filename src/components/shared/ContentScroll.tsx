@@ -3,9 +3,9 @@ import React from 'react';
 const ContentScroll = () => {
     return (
         <div className="">
-            <div className=" items-center justify-center bg-white  p-4">
+            <div className=" items-center justify-center bg-white  p-4 pb-[20px]">
                 <div className='p-5 border-[#CACACA] border text-sm rounded-lg  w-fit mx-auto'>
-                    <div className=" text-sm   sm:container  h-[485px] overflow-y-auto sm:p-6 custom-scrollbar">
+                    <div className=" text-sm   sm:container  h-[485px] overflow-y-auto sm:p-6 custom-scrollbar ">
                         <div className='sm:container'>
                             <p>Please read carefully the Terms &amp; Conditions set out below before booking your journey through XRide Ltd website. You must agree to the CABBX Ltd terms &amp; Conditions before proceeding with your booking by ticking the box ‘I agree to CABBX Terms &amp; Conditions’ when booking your journey. If you do not agree with the Terms &amp; Conditions please do not go ahead and book your journey through CABBX Ltd. By accepting the Terms &amp; Conditions you are agreeing that you have the authority and have the authority for representing the person you are booking on behalf of. You agree that:</p>
                             <ul className="list-disc list-inside my-4">
