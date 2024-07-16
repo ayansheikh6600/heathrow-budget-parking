@@ -48,6 +48,7 @@ const page = () => {
             <PopularComment />
             <SocialShare />
             <ContactSection />
+            <ContactSection/>
 
 
         </div>
