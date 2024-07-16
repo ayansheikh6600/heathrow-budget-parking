@@ -7,7 +7,7 @@ const GuestPostForm = () => {
         <div className='md:w-[80%] sm:text-start text-center'>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Create Guest Post Submission Form?</h1>
           <p className="text-gray-600 sm:text-base text-xs">
-            Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book.
+            {"Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book."}
           </p>
         </div>
 
@@ -36,7 +36,7 @@ const GuestPostForm = () => {
             </label>
           </div>
           <input type="text" placeholder="Link To Your Blog" className="w-full p-2 rounded mb-4 bg-[#DDDADA]" />
-          <p className='w-[90%] mx-auto text-center text-white'>If you don't have a blog, please include a link to another website where we can read a sample of your writing</p>
+          <p className='w-[90%] mx-auto text-center text-white'>{"If you don't have a blog, please include a link to another website where we can read a sample of your writing"}</p>
           <div className='flex flex-col justify-center items-center mt-2'>
 
           <button type="submit" className="w-fit bg-secondary-dark text-white py-2 px-4 rounded hover:bg-secondary-extraDark">Submit</button>
