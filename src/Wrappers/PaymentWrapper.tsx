@@ -138,7 +138,7 @@ const PaymentDetails = ({ formData, setFormData }: any) => {
         </div>
       </div>
       <div className="relative p-4 shadow-[0_3px_15px_3px_rgba(0,0,0,0.2)] rounded-lg bg-cover bg-no-repeat bg-center">
-        <div className="absolute inset-0 bg-[url('/ICON.png')] bg-cover bg-no-repeat bg-center opacity-10 rounded-lg"></div>
+        <div className="absolute inset-0 bg-[url('/icon.png')] bg-cover bg-no-repeat bg-center opacity-10 rounded-lg"></div>
         <div className="relative z-10 space-y-2">
           <h2 className="text-xl font-semibold text-center">Booking Details</h2>
           <p className=" mb-4 sm:text-[15px] font-medium text-xs text-center">
