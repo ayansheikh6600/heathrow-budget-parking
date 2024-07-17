@@ -8,7 +8,7 @@ const Hero = () => {
     <div className="relative w-full -z-10">
       <Image height={200} src={HeroBack} width={100} className="w-full" alt="Hero Background" />
       <div className="absolute inset-y-0 left-0 flex  max-[1228px]:py-[50px] max-[369px]:py-[20px]    w-full bg-gradient-hero">
-        <div className="container min-[1228px]:mt-[140px] ">
+        <div className="container min-[1228px]:mt-[165px] ">
           <div className="text-left w-full md:w-[70%] lg:w-[50%] flex flex-col gap-3">
             <h1 className="text-sm sm:text-2xl md:text-4xl lg:text-6xl text-white font-plus-jakarta font-extrabold">
               Go Wherever, Whenever

@@ -84,10 +84,16 @@ const Footer = () => {
             <p className="">&copy; 2024 Copyright Heathrow Budget Parking. All Rights Reserved.</p>
 
             <div className='flex items-center justify-center gap-6 mt-2 md:mt-0 text-white text-xl'>
+              <a href="https://www.linkedin.com/company/budgetparking/about/?viewAsMember=true" target='_blank'>
               <FaLinkedinIn />
+              </a>
+              <a href="https://x.com/HBudgetParking" target='_blank'>
               <FaTwitter />
+              </a>
               <PiInstagramLogoFill />
+              <a href="https://www.facebook.com/budgetparking/" target='_blank'>
               <FaFacebookF />
+              </a>
 
             </div>
           </div>
