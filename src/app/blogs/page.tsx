@@ -11,9 +11,9 @@ import React from 'react'
 
 const page = () => {
     return (
-        <div className='sm:container p-2 flex flex-col gap-3 sm:gap-6'>
+        <div className='sm:container flex flex-col gap-3 sm:gap-6'>
 
-            <div className="flex flex-col p-4 gap-10 mt-6 sm:mt-10">
+            <div className="flex flex-col p-4 gap-10 py-[50px]">
                 <Head>
                     <title>Reliable Ride</title>
                 </Head>
@@ -48,7 +48,6 @@ const page = () => {
             <PopularComment />
             <SocialShare />
             <ContactSection />
-            <ContactSection/>
 
 
         </div>

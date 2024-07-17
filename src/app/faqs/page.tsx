@@ -79,8 +79,8 @@ const Page = () => {
   const categories = Object.keys(faqData);
 
   return (
-    <div className='flex flex-col gap-5 py-6 sm:container p-2'>
-      <div className='md:w-[50%] mx-auto sm:w-[80%] w-full space-y-[20px] text-center sm:p-0 p-[50px]'>
+    <div className='flex flex-col gap-5 py-[50px] sm:container p-2'>
+      <div className='md:w-[50%] mx-auto sm:w-[80%] w-full space-y-[20px] text-center sm:p-0 '>
         <h1 className='capitalize text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-secondary-extraDark'>
           Frequently Asked Questions
         </h1>
@@ -89,7 +89,7 @@ const Page = () => {
         </p>
       </div>
 
-      <div className="items-center justify-center bg-white pb-[20px]">
+      <div className="items-center justify-center bg-white ">
         <div className='p-5 border-gray-300 border text-sm rounded-lg w-full'>
           <div className='text-sm sm:container h-[485px] overflow-y-auto sm:p-6 custom-scrollbar'>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 items-center justify-center text-center gap-2 md:gap-5 w-full bg-[#F5F5F5] p-3 px-6 rounded-lg mb-4'>

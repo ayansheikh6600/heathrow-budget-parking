@@ -2,17 +2,17 @@ import React from 'react';
 
 const PricingCard = ({ title, price, features, rating ,category}:any) => {
   return (
-    <div className="flex flex-col border h-fit border-gray-200 rounded-tr-3xl rounded-bl-3xl  shadow-md p-6 m-4 bg-white">
-      <h2 className="text-2xl font-bold text-green-900 mb-2">{title}</h2>
-      <h3 className="text-xl font-semibold text-secondary-extraDark mb-2 uppercase">{category}</h3>
-      <h3 className="text-xl font-bold text-secondary-extraDark mb-4">{price}</h3>
-      <ul className="flex-1 mb-4">
+    <div className="flex flex-col border h-fit border-gray-200 rounded-tr-3xl rounded-bl-3xl  shadow-md p-6 m-4 space-y-[10px] bg-white">
+      <h2 className="text-2xl  uppercase font-black text-green-900 ">{title}</h2>
+      <h3 className="text-xl font-bold text-secondary-extraDark  uppercase">{category}</h3>
+      <h3 className="text-xl  font-black text-secondary-extraDark ">{price}</h3>
+      <ul className="flex-1 space-y-[20px]">
         {features.map((feature:any, index:any) => (
           <li key={index} className="flex items-center mb-2">
             <svg className="w-4 h-4 text-primary mr-2 " fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-10.707a1 1 0 00-1.414-1.414L9 9.586 7.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l5-5z" clipRule="evenodd" />
             </svg>
-            <span>{feature}</span>
+            <span className=' text-[#959292]'>{feature}</span>
           </li>
         ))}
       </ul>
@@ -31,7 +31,7 @@ const PricingCard = ({ title, price, features, rating ,category}:any) => {
 const Pricing = () => {
   const pricingData = [
     {
-      title: 'Meet & Greet Silver',
+      title: 'Meet & Greet',
       price: '140$',
       category : "Silver",
       features: [
@@ -44,7 +44,7 @@ const Pricing = () => {
       rating: 5,
     },
     {
-      title: 'Meet & Greet Gold',
+      title: 'Meet & Greet',
       price: '140$',
       category : "Gold",
       features: [
@@ -58,7 +58,7 @@ const Pricing = () => {
       rating: 5,
     },
     {
-      title: 'Meet & Greet Platinum',
+      title: 'Meet & Greet',
       price: '140$',
       category : "Paltinium",
       features: [

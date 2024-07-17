@@ -33,14 +33,17 @@ const page = () => {
     ];
 
     return (
-        <div className='sm:container p-2 flex flex-col gap-4'>
-            <div className=" rounded-lg ">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl sm:w-[90%] mx-auto mt-5 text-[#313131] font-bold text-center ">
+        <div className='sm:container p-2 flex flex-col gap-4 py-[50px] space-y-[20px]'>
+            
+                <div className='md:w-[80%] mx-auto sm:w-[80%] w-full space-y-[10px] text-center sm:p-0'>
+
+                <h2 className="text-3xl sm:text-4xl md:text-5xl sm:w-[90%] mx-auto  text-[#313131] font-bold text-center ">
                     Looking For More Information Or Have A Specific Request?
                 </h2>
-                <p className="text-center text-gray-600 mb-8">
+                <p className="text-center text-gray-600 ">
                     Our team is always ready to help with anything you require.
                 </p>
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {options.map((option, index) => (
                         <button key={index} className="  border rounded-lg p-6 flex sm:flex-row flex-col gap-2 items-center text-center sm:text-start bg-primary transition duration-300">
@@ -54,7 +57,7 @@ const page = () => {
 
                         </button>
                     ))}
-                </div>
+                
             </div>
             <div className='sm:w-[80%] mx-auto p-2 text-center'>
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-center ">Contact Us</h2>

@@ -6,7 +6,12 @@ const CategoryGrid = () => {
     <div>
         
 
-        <div className='sm:block hidden'>
+        <div className='sm:block hidden space-y-[20px]'>
+            <div>
+                
+                <h2 className='text-3xl sm:text-4xl md:text-[40px] sm:text-start text-center font-bold text-[#232536] '>
+                    Category                </h2>
+            </div>
                 <section className="grid grid-cols-12 gap-4 w-full h-[calc(100vh-100px)] ">
                     <div className="col-span-12 lg:col-span-8 grid grid-rows-12 gap-4">
                         <div className="row-span-8 relative aspect-w-16 aspect-h-9 sm:aspect-none">
@@ -82,7 +87,13 @@ const CategoryGrid = () => {
                 </section>
             </div>
 
-            <section className='sm:hidden block'>
+            <section className='sm:hidden block space-y-[20px]'>
+            <div>
+                
+                <h2 className='text-3xl sm:text-4xl md:text-[40px] sm:text-start text-center font-bold text-[#232536] mb-4'>
+                    Category                </h2>
+            </div>
+                
                 <div className="grid grid-row-5 gap-4">
 
                     <div className="relative  h-52">

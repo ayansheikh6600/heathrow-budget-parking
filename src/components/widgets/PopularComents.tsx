@@ -3,8 +3,8 @@ import React from 'react';
 
 const PopularComment = () => {
   return (
-    <div className=" py-4 rounded-lg ">
-      <h2 className="text-3xl sm:text-4xl md:text-5xl sm:text-start text-center font-bold mb-4">Most Popular</h2>
+    <div className=" py-[50px] space-y-[20px] rounded-lg ">
+      <h2 className="text-3xl sm:text-4xl md:text-[40px] sm:text-start text-center font-bold text-[#232536]">Most Popular</h2>
       <div className="space-y-4">
         {[1, 2].map((index) => (
           <div key={index} className="bg-[#193D1C] shadow-[0_3px_15px_3px_rgba(0,0,0,0.2)] p-3 rounded-b-xl rounded-r-xl text-white">

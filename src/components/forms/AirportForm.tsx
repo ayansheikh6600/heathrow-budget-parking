@@ -3,6 +3,7 @@ import React, { ChangeEvent, useState } from 'react';
 import InputComp from '../shared/InputComp';
 import { Button } from '../ui/button';
 import DateTimeInput from '../shared/DateTimeInput';
+import Link from 'next/link';
 
 interface FormData {
   firstName: string;
@@ -55,8 +56,8 @@ const AirportForm = () => {
   };
 
   return (
-    <div className=' w-full sm:container  sm:mt-[-150px] md:mt-[-180px] z-10'>
-      <div className='w-fit mx-auto bg-white rounded-t-xl p-2'>
+    <div className=' w-full sm:container  sm:mt-[-150px] md:mt-[-290px] lg:mt-[-380px] z-10'>
+      <div className='w-fit mx-auto bg-white rounded-t-xl p-4 px-6'>
         {/* <div className='grid grid-cols-1 sm:grid-cols-4 gap-3 '>
           <Button className='outline-primary border-primary text-xs sm:text-sm'>Airport Parking</Button>
           <Button className='outline-primary text-primary border-primary text-xs sm:text-sm' variant={"outline"}>Hotel & Parking</Button>
@@ -71,7 +72,7 @@ const AirportForm = () => {
 
 <div className='container'>
 
-      <div className='grid grid-cols-12 gap-3 container bg-white rounded-xl shadow-lg p-3 sm:px-6 '>
+      <div className='grid grid-cols-12 gap-3 container bg-white rounded-xl shadow-lg p-3 sm:px-8 sm:p-6 '>
         <select name="airport" className='w-full text-gray-500 text-xs sm:text-sm p-2 sm:p-3 border-gray-200 border rounded-md col-span-12 sm:col-span-6' onChange={handleChange}>
           <option>Airport</option>
           {airports.map((item, index)=>{
@@ -139,7 +140,9 @@ const AirportForm = () => {
           </div>
           <div className='  flex justify-center'>
             <Button className='bg-primary sm:px-20'>
+              <Link href={'/quote'}>
               Get Code
+              </Link>
             </Button>
           </div>
         </div>

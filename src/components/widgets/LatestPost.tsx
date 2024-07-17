@@ -49,15 +49,15 @@ export default function LatestPost() {
   ];
 
   return (
-    <div className="p-4">
+    <div className="p-4 py-[50px]">
       <Head>
         <title>Latest Post</title>
       </Head>
       <header className=" mb-8">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl sm:text-start text-center font-semibold mb-4">Latest Post</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-[40px] sm:text-start text-center font-bold text-[#232536] mb-4">Latest Post</h1>
       </header>
       <main className="flex flex-col items-center">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 w-full ">
           {posts.map((post, index) => (
             <PostCard
               key={index}

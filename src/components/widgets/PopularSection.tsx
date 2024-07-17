@@ -48,8 +48,8 @@ const PopularSection = () => {
   };
 
   return (
-    <div className="">
-      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-center sm:text-start">Most Popular</h2>
+    <div className="py-[50px] space-y-[20px]">
+      <h2 className="text-3xl sm:text-4xl md:text-[40px] sm:text-start text-center font-bold text-[#232536]">Most Popular</h2>
       <div className="relative block sm:hidden">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:px-6 lg:px-8 ">
           {posts.slice(currentIndex, currentIndex + 3).map((post, index) => (

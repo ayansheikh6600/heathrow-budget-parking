@@ -5,8 +5,8 @@ import React from 'react'
 const Page = () => {
   return (
     <>
-    <div className='flex flex-col gap-5 container mt-[20px]'>
-        <div className='md:w-[50%] mx-auto sm:w-[80%] w-full space-y-[20px] text-center sm:p-0 p-[50px]   '>
+    <div className='flex flex-col gap-5 py-[50px] container'>
+        <div className='md:w-[50%] mx-auto sm:w-[80%] w-full space-y-[20px] text-center sm:p-0    '>
             <h1 className='capitalize text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-secondary-extraDark'>
             terms & conditions
             </h1>
