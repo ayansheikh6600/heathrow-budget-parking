@@ -78,9 +78,18 @@ const Pricing = () => {
       setUserData(storedUserData ? JSON.parse(storedUserData) : null);
 
       const fetchData = async () => {
-        const response = await fetch("/api/sheets");
-        const result = await response.json();
-        setData(result.data);
+        try {
+          console.log("Fetching data from /api/sheets...");
+          const response = await fetch("/api/sheets");
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          const result = await response.json();
+          console.log("Data fetched successfully:", result.data);
+          setData(result.data);
+        } catch (error) {
+          console.error("Error fetching data:", error);
+        }
       };
 
       fetchData();
@@ -95,6 +104,7 @@ const Pricing = () => {
   const calculatePackagePrices = (durationDays: any) => {
     const row = data?.find((row: any) => row[0] === `${durationDays} Day`);
     if (!row) {
+      console.log("Duration not found in data");
       return { error: "Duration not found in data" };
     }
     const goldPrice = row[4];
