@@ -130,31 +130,7 @@ const PaymentDetails = ({ formData, setFormData }: any) => {
 
 
 
-    const response = await fetch('/api/saveFormData', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formPayload),
-    });
 
-    // try {
-    //   const response = await fetch('https://docs.google.com/forms/d/e/1FAIpQLSdsbR2ZYXC4ptKh2CHrjI0duBybTGgNSdEyasaYDrPseTgjqQ/viewform', {
-    //     method: 'POST',
-    //     headers: {
-    //       'Content-Type': 'application/x-www-form-urlencoded',
-    //     },
-    //     body: new URLSearchParams(formPayload).toString(),
-    //   });
-  
-    //   if (response.ok) {
-    //     console.log('Form submitted successfully!');
-    //   } else {
-    //     console.error('Error submitting form:', response.statusText);
-    //   }
-    // } catch (error) {
-    //   console.error('Error submitting form:', error);
-    // }
     
 
   }
