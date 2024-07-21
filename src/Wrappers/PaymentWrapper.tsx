@@ -128,6 +128,16 @@ const PaymentDetails = ({ formData, setFormData }: any) => {
 
     console.log(formPayload);
 
+
+
+    const response = await fetch('/api/saveFormData', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formPayload),
+    });
+
     // try {
     //   const response = await fetch('https://docs.google.com/forms/d/e/1FAIpQLSdsbR2ZYXC4ptKh2CHrjI0duBybTGgNSdEyasaYDrPseTgjqQ/viewform', {
     //     method: 'POST',

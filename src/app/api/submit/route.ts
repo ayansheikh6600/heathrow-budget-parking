@@ -1,40 +1,37 @@
-import { NextResponse } from 'next/server';
-import { google } from 'googleapis';
+import { NextApiRequest, NextApiResponse } from 'next';
+import fetch from 'node-fetch';
 
-// POST request handler
-export async function POST(req: Request) {
-  const { pickupDate, pickupTime, dropOffDate, dropOffTime, airport, terminal, promoCode } = await req.json();
+const SPREADSHEET_ID = '1-HiuVw5OGBJgg-dHyr76tmuZ5cpzXHFA0PKqzxuSnIA';
+const SHEET_NAME = 'Sheet2';
+const API_KEY = 'eb78fd6ee5d7f760ebef0db0b34ded3ff38fb04d';
 
-  try {
-    // Google Sheets API setup
-    const auth = new google.auth.GoogleAuth({
-      credentials: JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_CREDENTIALS as string),
-      scopes: ['https://www.googleapis.com/auth/spreadsheets'],
-    });
-    const sheets = google.sheets({ version: 'v4', auth });
-    const spreadsheetId = process.env.SPREADSHEET_ID;
+async function saveFormData(req: NextApiRequest, res: NextApiResponse) {
+  if (req.method === 'POST') {
+    const { name, email, message } = req.body;
+    
+    try {
+      const response = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${SHEET_NAME}:append?valueInputOption=USER_ENTERED&key=${API_KEY}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          values: [[name, email, message]]
+        }),
+      });
 
-    // Append form data to Google Sheet
-    await sheets.spreadsheets.values.append({
-      spreadsheetId,
-      range: 'Sheet2!A:G', // Adjust this range according to your sheet structure
-      valueInputOption: 'RAW',
-      requestBody: {
-        values: [[pickupDate, pickupTime, dropOffDate, dropOffTime, airport, terminal, promoCode]],
-      },
-    });
-
-    // Fetch pricing from Google Sheet
-    const pricing = await sheets.spreadsheets.values.get({
-      spreadsheetId,
-      range: 'Sheet1!H:J', // Adjust this range to your pricing columns
-    });
-
-    const prices = pricing.data.values;
-
-    return NextResponse.json({ status: 'success', prices });
-  } catch (error: any) {
-    console.error(error);
-    return NextResponse.json({ status: 'error', error: error.message });
+      if (response.ok) {
+        res.status(200).json({ message: 'Form data saved successfully!' });
+      } else {
+        res.status(500).json({ error: 'Error saving form data' });
+      }
+    } catch (error) {
+      console.error('Error saving form data:', error);
+      res.status(500).json({ error: 'Error saving form data' });
+    }
+  } else {
+    res.status(405).json({ error: 'Method not allowed' });
   }
 }
+
+export default saveFormData;
