@@ -129,7 +129,7 @@ const Pricing = () => {
   const startDate = new Date(userData?.PickDate);
   const endDate = new Date(userData?.DropDate);
   const totalDays = calculateDaysBetweenDates(startDate, endDate);
-  const PackagePrice = calculatePackagePrices(totalDays - 1);
+  const PackagePrice = calculatePackagePrices(totalDays);
 
   const pricingData = [
     {

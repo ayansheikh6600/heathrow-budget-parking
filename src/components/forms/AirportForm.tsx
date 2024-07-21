@@ -7,11 +7,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation'
 
 interface FormData {
-  firstName: string;
-  lastName: string;
-  email: string;
   terminal:string;
-  message: string;
   airport: string;
   PickDate: string;
   PickTime: string;
@@ -35,11 +31,7 @@ const AirportForm = () => {
 
 
   const [formData, setFormData] = useState<FormData>({
-    firstName: "",
-    lastName: "",
-    email: "",
     terminal : "",
-    message: "",
     airport: "",
     PickDate: "",
     PickTime: "",
