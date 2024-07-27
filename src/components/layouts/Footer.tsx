@@ -59,7 +59,7 @@ const Footer = () => {
                 <ul className="space-y-3">
 
                   <li><Link href={'/about'}> About Us </Link></li>
-                  <li><Link href={'/blogs'}>Blog</Link></li>
+                  {/* <li><Link href={'/blogs'}>Blog</Link></li> */}
                   <li><Link href={'/contact'}>Contact Us</Link> </li>
                   <li > <Link href={"/policy"}>Privacy Policy</Link></li>
                   <li ><Link href={'/terms'}>Terms & Conditions </Link></li>
@@ -90,6 +90,7 @@ const Footer = () => {
               <a href="https://x.com/HBudgetParking" target='_blank'>
               <FaTwitter />
               </a>
+              <a href="https://www.instagram.com/hbudgetparking/" target='_blank'></a>
               <PiInstagramLogoFill />
               <a href="https://www.facebook.com/budgetparking/" target='_blank'>
               <FaFacebookF />

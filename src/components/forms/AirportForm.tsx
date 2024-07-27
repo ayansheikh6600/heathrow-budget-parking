@@ -13,6 +13,7 @@ interface FormData {
   PickTime: string;
   DropDate: string;
   DropTime: string;
+  DropOffTerminal: string;
   PromoCode: string;
 }
 
@@ -34,6 +35,7 @@ const AirportForm = () => {
     terminal : "",
     airport: "",
     PickDate: "",
+    DropOffTerminal:"",
     PickTime: "",
     DropDate: "",
     DropTime: "",
@@ -171,15 +173,29 @@ const AirportForm = () => {
               value={formData.PromoCode}
               onChange={handleChange}
             />
+            
           </div>
-          <div className='  flex justify-center'>
+          <select name="terminal" className='w-full text-gray-500 text-xs sm:text-sm p-2 sm:p-3 border-gray-200 border rounded-md' onChange={handleChange}>
+          
+          {/* <option value="terminal1">terminal1</option> */}
+          <option>Select</option>
+          <option value="terminal2">Terminal 2</option>
+          <option value="terminal3">Terminal 3</option>
+          <option value="terminal4">Terminal 4</option>
+          <option value="terminal5">Terminal 5</option>
+        </select>
+
+        <div className='col-span-12 flex justify-center'>
             <Button type='submit' className='bg-primary sm:px-20'>
               {/* <Link href={'/quote'}> */}
               Get Code
               {/* </Link> */}
             </Button>
           </div>
+         
         </div>
+        
+        
       </div>
       </form>
 </div>
