@@ -215,15 +215,6 @@ const PaymentDetails = ({ formData, setFormData }: any) => {
   );
 };
 
-// Confirmation Component
-const Confirmation = ({ formData }: any) => {
-  return (
-    <div className="p-4">
-      <h2 className="text-lg font-semibold mb-4">Confirmation</h2>
-      <pre className="bg-gray-100 p-4 rounded">{JSON.stringify(formData, null, 2)}</pre>
-    </div>
-  );
-};
 
 // Main Page Component
 const PaymentWrapper = () => {
