@@ -116,7 +116,10 @@ const PaymentDetails = ({ formData, setFormData }: any) => {
     setFormData({ ...formData, [name]: value });
   };
   
-  const localStorageData = JSON.parse(localStorage.getItem('userdata') || '{}');
+  const localStorageData: any | null = (() => {
+    const data = localStorage.getItem("userdata");
+    return data ? JSON.parse(data) : null;
+  })();
   const onsubmit = async ()=>{
 
   
@@ -240,7 +243,10 @@ const PaymentWrapper = () => {
   });
 
   useEffect(() => {
-    const localStorageData = JSON.parse(localStorage.getItem('userdata') || '{}');
+    const localStorageData : any | null = (() => {
+      const data = localStorage.getItem("userdata");
+      return data ? JSON.parse(data) : null;
+    })();
   
     setFormData((prevData) => ({
       ...prevData,
