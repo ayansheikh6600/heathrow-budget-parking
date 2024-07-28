@@ -1,3 +1,5 @@
+
+"use client"
 import CategoryGrid from '@/components/widgets/CategoryGrid';
 import ContactSection from '@/components/widgets/ContactSection';
 import GuestPostSection from '@/components/widgets/GuestPostSection'
@@ -7,9 +9,25 @@ import PopularSection from '@/components/widgets/PopularSection';
 import SocialShare from '@/components/widgets/SocialShare';
 import Head from 'next/head'
 import Image from 'next/image'
-import React from 'react'
+import { useRouter } from 'next/navigation';
+
+import React, { useEffect } from 'react'
 
 const page = () => {
+
+    const router = useRouter();
+
+    useEffect(() => {
+      if (typeof window !== 'undefined') {
+        if (process.env.NEXT_PUBLIC_SHOW_BLOG !== 'true') {
+          router.back();
+        }
+      }
+    }, [router]);
+
+
+    
+
     return (
         <div className='sm:container flex flex-col gap-3 sm:gap-6'>
 
