@@ -90,8 +90,10 @@ const Footer = () => {
               <a href="https://x.com/HBudgetParking" target='_blank'>
               <FaTwitter />
               </a>
-              <a href="https://www.instagram.com/hbudgetparking/" target='_blank'></a>
+              <a href="https://www.instagram.com/hbudgetparking/" target='_blank'>
+              
               <PiInstagramLogoFill />
+              </a>
               <a href="https://www.facebook.com/budgetparking/" target='_blank'>
               <FaFacebookF />
               </a>
