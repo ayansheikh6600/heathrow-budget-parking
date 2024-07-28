@@ -116,10 +116,15 @@ const PaymentDetails = ({ formData, setFormData }: any) => {
     setFormData({ ...formData, [name]: value });
   };
   
-  const localStorageData: any | null = (() => {
-    const data = localStorage.getItem("userdata");
-    return data ? JSON.parse(data) : null;
-  })();
+  const [localStorageData, setLocalStorageData] = useState<any | null>(null);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      // Check if we're running in the browser
+      const data = localStorage.getItem("userdata");
+      setLocalStorageData(data ? JSON.parse(data) : null);
+    }
+  }, []);
   const onsubmit = async ()=>{
 
   
